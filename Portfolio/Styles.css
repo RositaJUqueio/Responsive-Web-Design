@@ -19,7 +19,6 @@ nav{
     padding-top: 10px;
     padding-left: 10%;
     padding-right: 10%;
-    padding-bottom: 10px;
     color: white;
     box-shadow: 0 2px 0 rgb(0 0 0 / 40%);
   z-index: 10;
@@ -51,33 +50,27 @@ nav ul li:hover{
   color: yellow;
 }
 
-/*Video*/
-#background-video {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: -1;
-  }
- /*About Section*/
-  #About{
- color: black;
- 
-   }
- #About, h1{
-    font-size: 50px;
+/*About Section*/
+.container{
+        text-align: center;
+        justify-content: space-between;
+    }
 
- }  
+#video{
+    display: block;
+    margin: auto;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}    
 
- #About, h3{
-    font-size: 30px; 
- }
 
-  
+ /*Peojects section*/
+
+.container{
+    width: 80%;
+    margin: 10% auto;
+    background: rgb(223, 223, 53);
+}
 
  
 
@@ -85,20 +78,20 @@ nav ul li:hover{
 /*Media Queries: Mobile styles go first, without media queries. */
 
 @media only screen and (min-width: 321px) {
-    #background-video{ 
-        height: 70vh;
-    }
+    
     /* Larger mobile styles (wider than 320 pixels) */
 }
 
 @media only screen and (min-width: 600px) {
     /* Tablet styles (wider than 600 pixels) */
-}
+    
 
 @media only screen and (min-width: 1024px) {
     /* Large laptop styles (wider than 1024 pixels) */
+    
 }
 
 @media only screen and (min-width: 1140px) {
     /* Desktop styles (wider than 1140 pixels) */
+   
 }
