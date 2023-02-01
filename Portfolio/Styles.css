@@ -63,9 +63,24 @@ nav ul li:hover{
     bottom: 0;
     z-index: -1;
   }
+ /*About Section*/
+  #About{
+ color: black;
+ 
+   }
+ #About, h1{
+    font-size: 50px;
 
-  /*About Section*/
+ }  
+
+ #About, h3{
+    font-size: 30px; 
+ }
+
   
+
+ 
+
 
 /*Media Queries: Mobile styles go first, without media queries. */
 
