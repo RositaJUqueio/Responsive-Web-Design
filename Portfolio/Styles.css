@@ -83,8 +83,33 @@ nav ul li:hover{
     text-transform: uppercase;
 }
 
- 
+ .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+ }
 
+ .col{
+    flex-basis: 50%;
+    min-width: 250px;
+ }
+
+ .feature-img{
+    width: 83%;
+    margin: auto;
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+ }
+
+ .small-img-row{
+    display: flex;
+    margin: 20px 0;
+    align-items: center;
+    border-radius: 6px;
+    overflow: hidden;
+    width: 85%
+ }
 
 /*Media Queries: Mobile styles go first, without media queries. */
 
