@@ -152,7 +152,7 @@ video:focus{
 }
  .close-btn{
     position: absolute;
-    top: 10%;
+    top: 5%;
     right: 10px;
     width: 35px;
     cursor: pointer;
