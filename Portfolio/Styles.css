@@ -158,6 +158,45 @@ video:focus{
     cursor: pointer;
  }
 
+/*Contact section*/
+
+footer{
+    width: 80%;
+    margin: 80px auto;
+    background: rgb(182, 182, 36);
+}
+
+footer{
+    padding: 60px 0;
+    font-size: 44;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+
+.fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Facebook */
+  .fa-github {
+    background: black;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: black;
+    color: white;
+  }
 
 
 /*Media Queries: Mobile styles go first, without media queries. */
@@ -169,7 +208,10 @@ video:focus{
 
 @media only screen and (min-width: 600px) {
     /* Tablet styles (wider than 600 pixels) */
-    
+    .video-player{
+
+    }
+}
 
 @media only screen and (min-width: 1024px) {
     /* Large laptop styles (wider than 1024 pixels) */
@@ -178,6 +220,5 @@ video:focus{
 
 @media only screen and (min-width: 1140px) {
     /* Desktop styles (wider than 1140 pixels) */
-   
-}
+
 }
