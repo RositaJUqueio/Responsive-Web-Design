@@ -51,10 +51,14 @@ nav ul li:hover{
 }
 
 /*About Section*/
-.container{
+.content1{
         text-align: center;
         justify-content: space-between;
     }
+
+.content1 h1{
+    text-transform: uppercase;
+}
 
 #video{
     display: block;
@@ -68,8 +72,15 @@ nav ul li:hover{
 
 .container{
     width: 80%;
-    margin: 10% auto;
+    margin: 80px auto;
     background: rgb(223, 223, 53);
+}
+
+.container h1{
+    padding: 60px 0;
+    font-size: 44;
+    text-align: center;
+    text-transform: uppercase;
 }
 
  
