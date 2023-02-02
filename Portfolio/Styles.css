@@ -140,18 +140,20 @@ nav ul li:hover{
 
  .video-player{
     width: 80%;
-    width: 60px;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
-    cursor: pointer;
+    display: none;
  }  
  
-
 video:focus{
     outline: none;
 }
+
+
+
+
 /*Media Queries: Mobile styles go first, without media queries. */
 
 @media only screen and (min-width: 321px) {

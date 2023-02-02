@@ -34,7 +34,7 @@
                     <div class="col">
                         <div class="feature-img">
                             <img src="./Pictures/museum.jpg" width="100%">
-                            <img src="./Pictures/play.png" class="play-btn">
+                            <img src="./Pictures/play.png" class="play-btn" onclick="playVideo('./Videos/museum1.mp4')">
                         </div> 
                     </div>
 
@@ -42,7 +42,7 @@
                         <div class="small-img-row">
                             <div class="small-img">
                                 <img src="./Pictures/fashion2.jpg">
-                                <img src="./Pictures/play.png" class="play-btn">
+                                <img src="./Pictures/play.png" class="play-btn" onclick="playVideo('./Videos/fashion1.mp4')">
                             </div>
                             <p> Cick on Image to play videos</p>
                         </div>
@@ -50,7 +50,7 @@
                         <div class="small-img-row">
                             <div class="small-img">
                                 <img src="./Pictures/ling.png">
-                                <img src="./Pictures/play.png" class="play-btn">
+                                <img src="./Pictures/play.png" class="play-btn" onclick="playVideo('./Videos/lnge.mp4')">
                             </div>
                             <p> Cick on Image to play videos</p>
                         </div>
@@ -66,12 +66,26 @@
                 </div>
             </div>
 
-            <div class="video-player">
-                <video width="100%" controls autoplay loop>
-                    <source src="https://vm.tiktok.com/ZMYmjSvn/" type="video/mp4">
+            <div class="video-player" id=""videoPlayer"">
+                <video width="100%" controls autoplay id="myVideo">
+                    <source src="./Videos/museum1.mp4" type="video/mp4">
                 </video>
+                <img src="./Pictures/close.png" class="close-btn" onclick="closeVideo">
             </div>
 
+            <script>
+                var videoPlayer = document.getElementById("videoPlayer");
+                var myVideo = document.getElementById("myVideo");  
+                
+                function stopVideo(){
+                   videoPlayer.style.display = "none";
+                } 
+                 
+                function playVideo(file){
+                    myVideo.src = file;
+                    videoPlayer.style.display = "block";
+                }
+            </script>
         </main>
         <footer id="Contact">
             <a href="#" class="fa fa-facebook"></a>
