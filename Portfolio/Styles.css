@@ -140,7 +140,7 @@ nav ul li:hover{
 
  .video-player{
     width: 80%;
-    position: absolute;
+    position: fixed;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);

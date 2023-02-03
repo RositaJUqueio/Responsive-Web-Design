@@ -47,7 +47,7 @@
                                 <img src="./Pictures/fashion2.jpg">
                                 <img src="./Pictures/play.png" class="play-btn" onclick="playVideo('./Videos/fashion1.mp4')">
                             </div>
-                            <p> Cick on Image to play videos</p>
+                            <p>Advert For a Store Named Famanda</p>
                         </div>
 
                         <div class="small-img-row">
@@ -55,15 +55,15 @@
                                 <img src="./Pictures/ling.png">
                                 <img src="./Pictures/play.png" class="play-btn" onclick="playVideo('./Videos/lnge.mp4')">
                             </div>
-                            <p> Cick on Image to play videos</p>
+                            <p>Advert For a Store Named Famanda</p>
                         </div>
 
                         <div class="small-img-row">
                             <div class="small-img">
                                 <img src="./Pictures/fashion2.jpg">
-                                <img src="./Pictures/play.png" class="play-btn" onclick="playVideo('./Videos/lnge.mp4')">
+                                <img src="./Pictures/friends.jpg" class="play-btn" onclick="playVideo('./Videos/Friends.mp4')">
                             </div>
-                            <p> Cick on Image to play videos</p>
+                            <p> Food & Drinks With Friends</p>
                         </div>
                     </div>         
                 </div>
@@ -82,9 +82,10 @@
                 var myVideo = document.getElementById("myVideo");  
                 
                 function stopVideo(){
-                   videoPlayer.pause();
-                   videoPlayer.style.display = "none";
-                } 
+                    myVideo.pause();
+                    videoPlayer.style.display = "none";
+                 }
+                 
                  
                 function playVideo(file){
                     myVideo.src = file;
