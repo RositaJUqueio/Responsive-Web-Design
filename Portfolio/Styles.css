@@ -202,23 +202,33 @@ footer{
 /*Media Queries: Mobile styles go first, without media queries. */
 
 @media only screen and (min-width: 321px) {
-    
     /* Larger mobile styles (wider than 320 pixels) */
+
 }
 
 @media only screen and (min-width: 600px) {
     /* Tablet styles (wider than 600 pixels) */
     .video-player{
-
+        max-height: 500px;
+        width: 45%;
     }
 }
 
 @media only screen and (min-width: 1024px) {
     /* Large laptop styles (wider than 1024 pixels) */
-    
+    .video-player{
+        max-height: 370px;
+        width: 35%;
+        position:absolute;
+    }
 }
 
 @media only screen and (min-width: 1140px) {
     /* Desktop styles (wider than 1140 pixels) */
-
+    .video-player{
+        width: 35%;
+        max-height: 310px;
+        position:absolute;
+    }
+   
 }
