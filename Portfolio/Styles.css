@@ -152,7 +152,7 @@ video:focus{
 }
  .close-btn{
     position: absolute;
-    top: 5%;
+    top: 10%;
     right: 10px;
     width: 35px;
     cursor: pointer;
@@ -174,7 +174,7 @@ footer{
 }
 
 .fa {
-    padding: 20px;
+    padding: 20px 12px 20px 10px ;
     font-size: 30px;
     width: 30px;
     text-align: center;
