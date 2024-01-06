@@ -250,5 +250,20 @@ align-self: flex-start;
         content: '';
         position: absolute;
         top: 0;
+        right: 0;
+        transform: translateX(100%); /*away from the button*/
+        transition: all .4s ease-in-out;
+        z-index: -1;
+    }
+    /*shape doesnt ahve a widthj or height defined so:*/
+    &:hover{
+        transition: all .4s ease-in-out;
+        &::before{
+          height: 100%;
+          width: 100%;
+          background-color: var(--color-secondary);
+          transform: translateX(0);
+          transition: all .4s ease-in-out;
+        }
     }
 }

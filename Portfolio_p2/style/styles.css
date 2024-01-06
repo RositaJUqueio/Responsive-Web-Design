@@ -228,6 +228,7 @@ align-self: flex-start;
   align-items: center;
   overflow: hidden;
   /*sudo elements*/
+  /*shape doesnt ahve a widthj or height defined so:*/
 }
 .main-btn .btn-text {
   padding: 0 2rem;
@@ -244,4 +245,18 @@ align-self: flex-start;
   content: "";
   position: absolute;
   top: 0;
+  right: 0;
+  transform: translateX(100%); /*away from the button*/
+  transition: all 0.4s ease-in-out;
+  z-index: -1;
+}
+.main-btn:hover {
+  transition: all 0.4s ease-in-out;
+}
+.main-btn:hover::before {
+  height: 100%;
+  width: 100%;
+  background-color: var(--color-secondary);
+  transform: translateX(0);
+  transition: all 0.4s ease-in-out;
 }/*# sourceMappingURL=styles.css.map */
