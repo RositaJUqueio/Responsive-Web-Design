@@ -155,8 +155,6 @@ NB: i can add different background colors
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     height: 100%;
-
-    /*left header section*/
     .left-header{
         display: flex;
         align-items: center;
@@ -209,6 +207,12 @@ NB: i can add different background colors
         }
     }
 }
+
+
+/*The About section*/
+
+
+
 
 /*Independent components here*/
 
