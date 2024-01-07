@@ -216,7 +216,13 @@ NB: i can add different background colors
     padding-top: 3.5rem;
     padding-bottom: 5rem;
     //right side
-    
+    .right-about{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
+        
+    }
+
 }
 
 
