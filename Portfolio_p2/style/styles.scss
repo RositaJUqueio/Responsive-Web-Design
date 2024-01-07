@@ -210,6 +210,14 @@ NB: i can add different background colors
 
 
 /*The About section*/
+.about-container{
+    display: grid;
+    grid: repeat(2, 1fr); /*spliting container into 2 equal parts*/
+    padding-top: 3.5rem;
+    padding-bottom: 5rem;
+    //right side
+    
+}
 
 
 /*Independent components here*/
@@ -247,17 +255,17 @@ align-self: flex-start;
         padding: 1rem;
 
     }
-    /*sudo elements*/
+    //sudo elements
     &::before{
         content: '';
         position: absolute;
         top: 0;
         right: 0;
-        transform: translateX(100%); /*away from the button*/
+        transform: translateX(100%); //away from the button
         transition: all .4s ease-in-out;
         z-index: -1;
     }
-    /*shape doesnt ahve a widthj or height defined so:*/
+    //shape doesnt have a width or height defined so:
     &:hover{
         transition: all .4s ease-in-out;
         &::before{
@@ -269,6 +277,7 @@ align-self: flex-start;
         }
     }
 }
+
 .main-title{
     text-align: center;
     h2{
@@ -286,9 +295,9 @@ align-self: flex-start;
             color: var(--color-grey-5);
             transition: all .4s ease-in-out;
             z-index: -1;
-            transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); //centering elements
             font-weight: 800;
-            font-size: 4.6rem; /*original is 6.3rem*/
+            font-size: 4.9rem; //original was 6.3rem
         }
     }
 }
